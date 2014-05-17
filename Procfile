@@ -1,0 +1,1 @@
+web: node_modules/LiveScript/bin/lsc server/app.ls
