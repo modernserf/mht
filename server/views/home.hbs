@@ -1,0 +1,25 @@
+<header class="home-header">
+  <p>The Media History Timeline is
+  lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+  quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+  consequat.</p>
+</header>
+
+<section class="home-content">
+  <h2>Tags</h2>
+  <ul>
+  {{#each tags}}
+    <li>
+      <h3><a href="/tag/{{@key}}">{{@key}}</a></h3>
+      <ul>
+      {{#each this}}
+        <li><a href="/event/{{guid}}">{{title}}</a></li>
+      {{/each}}
+      </ul>
+    </li>
+
+  {{/each}}
+  </ul>
+
+</section>

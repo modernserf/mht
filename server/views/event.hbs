@@ -1,0 +1,29 @@
+<header class="event-header">
+  <h2>{{event.title}}</h2>
+  <time datetime="{{date}}">{{date event.date}}</time>
+</header>
+
+<section class="event-content">
+  <h3>Perspectives</h3>
+  <ul>
+  {{#each event.perspectives}}
+    <li>
+      <blockquote>{{content}}</blockquote>
+      <cite>{{source}}&mdash;{{date date}}</cite>
+    </li>
+  {{/each}}
+  </ul>
+</section>
+
+<footer class="event-footer">
+{{#each tags}}
+  <section class="event-tag">
+    <h3><a href="/tag/{{@key}}">{{@key}}</a></h3>
+    <ul>
+    {{#each this}}
+      <li><a href="/event/{{guid}}">{{title}}</a></li>
+    {{/each}}
+    </ul>
+  </section>
+{{/each}}
+</footer>
