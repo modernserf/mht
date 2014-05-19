@@ -25,9 +25,9 @@ URLs
 ----
 The app is highly URL-driven; every part of the app is accessible via URL and thus citable, bookmarkable, and machine-readable. They are structured two dimensionally, eg:
 
-/event/national-guard-at-wto-protests?tags=black-bloc,indymedia
-------------------------------------- -------------------------
-              main node                    cross-reference
+    /event/national-guard-at-wto-protests?tags=black-bloc,indymedia
+    ------------------------------------- -------------------------
+                  main node                    cross-reference
 
 The path is the node being viewed; the query has the topics being highlighted in the UI. All application state will be fully encoded in the URL -- sharing this link will show the same page with the same cross-references highlighted; the back button will navigate you to the previous topic instead of dumping you back at the home screen.
 
